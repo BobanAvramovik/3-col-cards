@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  flex: 1;
+  position: relative;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  max-width: 1400px;
+  border-radius: 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 50px 10px;
+  }
+}
+
+.card {
+  padding: 5rem;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 3rem;
+}
+
+button {
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.5rem 6rem;
+  border-radius: 3rem;
+  border: 3px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover,
+button:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
